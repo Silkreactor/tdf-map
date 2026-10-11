@@ -1,33 +1,29 @@
-# TDF domains, roles and people
+# TDF connected working maps
 
-[Open the interactive map](https://silkreactor.github.io/tdf-map/).
+[Open the five-map atlas](https://silkreactor.github.io/tdf-map/).
 
-A working map to help people at Traditional Dream Factory find the relevant
-domain, role, knowledge contact and questions to clarify responsibility.
-Version v3.1, 11 October 2026. This is a review draft, not an official
-organisation chart or a statement of current decision-making authority.
+Version **v4.1**, 11 October 2026. A public review snapshot to help interested TDF contributors understand what is recorded, follow useful connections and identify what needs checking. It is not an official organisation chart, live service inventory or approved business plan.
 
-Open a coloured domain, select a role, search for a person, or choose
-**What needs checking**. Start with one or two relevant questions, not the
-whole register. Send corrections to Jaggy.
+## Five maps
 
-## What is included
+- [Domains and roles](index.html): eleven domains, forty-one role records, recorded people and question routes. Open a coloured branch or select a person.
+- [Digital infrastructure](infrastructure.html): existing resources, service responsibility and useful operating checks.
+- [People, roles and access](people.html): contribution, accountability and permission are distinct.
+- [AI and tech revenue](ai-revenue.html): practical usefulness, community experiments and possible earned income.
+- [Regenerative finance](regenerative-finance.html): existing backing mechanisms, ecological evidence and potential outside support.
 
-The page contains 11 domains, 41 role records, selected professional context,
-source summaries and 20 grouped questions. Unknowns and knowledge contacts
-remain separate from established role holders.
+Select a rectangle for facts, next checks and dated source summaries. Follow links to related roles and other maps. On small screens the new diagrams become vertical cards, with their relationships also listed as text. Search is local to the selected map.
 
-Raw transcripts, private profiles, credentials and internal source files
-are not included. There are no application analytics, accounts, external
-scripts or backend. GitHub Pages serves the static files.
+Recorded, reported, open and proposed information are labelled separately. A contact is not automatically the accountable owner. Publicly listed roles do not prove a current mandate or availability. No funding or revenue is treated as secured.
 
-## Updating the map
+## Review and corrections
 
-`index.html` is self-contained HTML, CSS, JavaScript and map data. Data can
-also be downloaded from the page. The map is a dated snapshot: it does not
-automatically collect corrections or refresh facts.
+Try one familiar piece of work. Does the map help you find what exists, who might know about it and one useful next step? Send Jaggy the page or node link and the correction, missing connection or confusing wording. Current role holders and source owners still need to confirm relevant changes.
 
-Reviewed updates are generated from the maintained source records and
-committed here. GitHub Pages publishes the root of the `main` branch;
-`.nojekyll` keeps it a plain static site. Git history preserves revisions.
-Keep private working records outside this public repository.
+This is a reading tool, not a shared editor. It has no submission form, login, application analytics, external scripts or service integrations. Content does not refresh automatically. All files and embedded details in this repository are public. Private notes, source recordings, credentials and detailed access inventories are not part of this publication.
+
+## Versions and portability
+
+The [original domains v3.1](versions/domains-v3.1.html) is preserved byte-for-byte. v4.1 retains its role and people data and adds connected reading paths. The four new maps each have a paired Markdown view. [Public data](public-atlas.json) and the [file manifest](manifest.json) preserve the selected facts, dates and output hashes.
+
+GitHub Pages serves the root of `main`. The repository is the public distribution copy; reviewed source material and private production files stay separate. Updates require source review, rebuild, privacy checks and an authorised publication. Git history supports version recovery, not revocation of copies already read or downloaded.

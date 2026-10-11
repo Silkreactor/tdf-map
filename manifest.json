@@ -1,0 +1,59 @@
+{
+  "version": "v4.1",
+  "sourceDomainsSha256": "2a12ca95fac6dc2189f7afa35392dd47a37ca848e2a946b3ddd4f72b7b027822",
+  "sourceEvidenceSha256": "98c26c2b721acd39f974b76abc2f33cc6072a7ca748a0ef5916019fadde2ad4c",
+  "files": {
+    ".nojekyll": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "README.md": {
+      "bytes": 2898,
+      "sha256": "0e3ea931f4d96a55fa7722e6e08397b8d6fcc96f556e195626afdf844a2acb88"
+    },
+    "ai-revenue.html": {
+      "bytes": 26737,
+      "sha256": "b6644079b0ba97fe0132a97b271c5103cf5e555a3367b0432c14fa7a7993e6b8"
+    },
+    "ai-revenue.md": {
+      "bytes": 5861,
+      "sha256": "6f53eb2ff86a3064910aa5e968dfa9087e2f569c4b6895a5868c3ff8ccffbad5"
+    },
+    "index.html": {
+      "bytes": 82339,
+      "sha256": "0d8f7203dfba5bbd18fb3f808228bf8136a99112ab8923e70e49f5582d8185bc"
+    },
+    "infrastructure.html": {
+      "bytes": 26663,
+      "sha256": "374b1f15f33e1090d863e49527f5f0242fa7bf07d12b91d2db17b7f445c6c16f"
+    },
+    "infrastructure.md": {
+      "bytes": 5662,
+      "sha256": "39502ef37ef7322f8555892929a5ff1f4d50a0ad28a624b268621f062b7615a2"
+    },
+    "people.html": {
+      "bytes": 26931,
+      "sha256": "2092bf0801a43e5ad4f8db910b8369d246d5c41b8be56475ceb4f48c3b801b76"
+    },
+    "people.md": {
+      "bytes": 6209,
+      "sha256": "7a56688177055ccc76ccbd90617052934cf0608a6b16e862c4ec510070c81ba9"
+    },
+    "public-atlas.json": {
+      "bytes": 41657,
+      "sha256": "98c26c2b721acd39f974b76abc2f33cc6072a7ca748a0ef5916019fadde2ad4c"
+    },
+    "regenerative-finance.html": {
+      "bytes": 27689,
+      "sha256": "8bcf3eaf8005fa71b1103976472d39b00fd9f74ed9e8153fd778c029a7a42e0c"
+    },
+    "regenerative-finance.md": {
+      "bytes": 6771,
+      "sha256": "c9be0a6f15361c265026c30f7f35e41cc7aca74e195eb5e17ea675f7e02aea6a"
+    },
+    "versions/domains-v3.1.html": {
+      "bytes": 71422,
+      "sha256": "2a12ca95fac6dc2189f7afa35392dd47a37ca848e2a946b3ddd4f72b7b027822"
+    }
+  }
+}

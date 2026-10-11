@@ -1,0 +1,1276 @@
+{
+  "version": "v4.1",
+  "date": "11 October 2026",
+  "maps": [
+    {
+      "id": "infrastructure",
+      "title": "Digital infrastructure",
+      "kicker": "Make daily work usable",
+      "question": "Which existing system can people use, and who supports it?",
+      "intro": "Start with findable shared records and practical connectivity. The inventory records useful assets and leads; it is not a live survey.",
+      "color": "#2877A1",
+      "columns": [
+        {
+          "id": "starting",
+          "title": "Existing starting points"
+        },
+        {
+          "id": "connect",
+          "title": "Connections to clarify"
+        },
+        {
+          "id": "next",
+          "title": "Useful next steps"
+        }
+      ],
+      "nodes": [
+        {
+          "id": "records",
+          "title": "Findable shared records",
+          "column": "starting",
+          "summary": "A retained source collection and search index already provide a starting point.",
+          "status": "recorded",
+          "known": [
+            "Website, governance and ecological records have retained source homes.",
+            "Dated captures and original sources are distinct."
+          ],
+          "checks": [
+            "Can another permitted contributor find, read and correct one useful record?"
+          ],
+          "sourceIds": [
+            "knowledge"
+          ],
+          "domainIds": [
+            "knowledge",
+            "digital"
+          ],
+          "roleIds": [
+            "capture_review",
+            "knowledge_upkeep"
+          ],
+          "links": [
+            {
+              "mapId": "people",
+              "label": "Find the review and upkeep route",
+              "relation": "depends-on",
+              "nodeId": "knowledge-care"
+            }
+          ]
+        },
+        {
+          "id": "connectivity",
+          "title": "Site connectivity",
+          "column": "starting",
+          "summary": "Existing connectivity is reported; practical coverage needs a current test.",
+          "status": "reported",
+          "known": [
+            "An on-site network knowledge contact and remote installer contact are recorded.",
+            "The activity-space connection needs a dated outcome."
+          ],
+          "checks": [
+            "Trace and test the actual room-to-internet journey.",
+            "Confirm fixed-line order, provider and delivery evidence."
+          ],
+          "sourceIds": [
+            "infra",
+            "direction"
+          ],
+          "domainIds": [
+            "digital"
+          ],
+          "roleIds": [
+            "network"
+          ],
+          "links": [
+            {
+              "mapId": "ai-revenue",
+              "label": "Reliable work experience",
+              "relation": "supports",
+              "nodeId": "cowork"
+            }
+          ]
+        },
+        {
+          "id": "monitoring",
+          "title": "Monitoring inventory",
+          "column": "starting",
+          "summary": "A dated Home Assistant inspection identifies configured devices and apps.",
+          "status": "recorded",
+          "known": [
+            "Energy and water monitoring configuration was inspected on 7 October.",
+            "Stored archives and a history source were located."
+          ],
+          "checks": [
+            "Verify one actual reading, timestamp, history/export path and useful operator question.",
+            "Configured devices and running apps do not prove present field data."
+          ],
+          "sourceIds": [
+            "infra"
+          ],
+          "domainIds": [
+            "digital",
+            "land"
+          ],
+          "roleIds": [
+            "monitoring",
+            "water_monitoring"
+          ],
+          "links": []
+        },
+        {
+          "id": "services",
+          "title": "Services and recovery",
+          "column": "connect",
+          "summary": "Media, community tools and hosted knowledge have separate operating histories.",
+          "status": "recorded",
+          "known": [
+            "Different services have separate owners, access and recovery needs.",
+            "Historical checks are useful evidence of earlier states."
+          ],
+          "checks": [
+            "Name support and recovery ownership per service.",
+            "Separate current availability, backup existence and tested restore."
+          ],
+          "sourceIds": [
+            "infra"
+          ],
+          "domainIds": [
+            "digital"
+          ],
+          "roleIds": [
+            "servers"
+          ],
+          "links": []
+        },
+        {
+          "id": "access-route",
+          "title": "Access request route",
+          "column": "connect",
+          "summary": "Use service ownership and approved access to turn records into usable resources.",
+          "status": "reported",
+          "known": [
+            "Nuno is reported as TDF Bitwarden owner.",
+            "Vault ownership does not establish all service permissions."
+          ],
+          "checks": [
+            "Confirm the request and approval route, permitted scope and backup contact.",
+            "Keep credentials outside the map."
+          ],
+          "sourceIds": [
+            "access",
+            "roles"
+          ],
+          "domainIds": [
+            "digital"
+          ],
+          "roleIds": [
+            "vault",
+            "closer_owner"
+          ],
+          "links": [
+            {
+              "mapId": "domains",
+              "label": "Bitwarden role and current basis",
+              "relation": "related",
+              "roleId": "vault"
+            }
+          ]
+        },
+        {
+          "id": "operating-owner",
+          "title": "Accountable operation",
+          "column": "connect",
+          "summary": "Knowledge contacts help diagnose; operating responsibility needs its own evidence.",
+          "status": "open",
+          "known": [
+            "Network knowledge and Closer contribution contacts are recorded."
+          ],
+          "checks": [
+            "Who accepts the service outcome, handles failures and maintains the record?",
+            "Which changes can that role authorize?"
+          ],
+          "sourceIds": [
+            "roles",
+            "direction"
+          ],
+          "domainIds": [
+            "digital",
+            "operations"
+          ],
+          "roleIds": [
+            "network",
+            "closer_owner",
+            "operations_director"
+          ],
+          "links": []
+        },
+        {
+          "id": "useful-proof",
+          "title": "One useful proof",
+          "column": "next",
+          "summary": "Retrieve one permitted record or verify one real operating journey with its user.",
+          "status": "proposed",
+          "known": [
+            "Existing resources allow bounded improvement before a larger platform decision."
+          ],
+          "checks": [
+            "Choose a real user, useful result, reviewer and maintenance route.",
+            "Record the dated outcome and what still depends on access."
+          ],
+          "sourceIds": [
+            "direction",
+            "knowledge"
+          ],
+          "domainIds": [
+            "knowledge",
+            "digital"
+          ],
+          "roleIds": [
+            "mapping",
+            "tech_bridge"
+          ],
+          "links": [
+            {
+              "mapId": "regenerative-finance",
+              "label": "Evidence for a bounded land result",
+              "relation": "supports",
+              "nodeId": "evidence"
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "records",
+          "to": "access-route",
+          "label": "Shared usability needs permission",
+          "kind": "dependency"
+        },
+        {
+          "from": "connectivity",
+          "to": "operating-owner",
+          "label": "A repair needs an accepted support route",
+          "kind": "dependency"
+        },
+        {
+          "from": "monitoring",
+          "to": "useful-proof",
+          "label": "Verify a real reading before extending",
+          "kind": "proposed"
+        },
+        {
+          "from": "services",
+          "to": "operating-owner",
+          "label": "Each service needs its own owner",
+          "kind": "dependency"
+        }
+      ],
+      "notes": [
+        "Can use now: retained records and existing role/source routes within permission.",
+        "Conditional: shared service availability, recovery, new hosting and compute readiness.",
+        "No IP addresses, credentials, internal endpoints or wiring claims are provided."
+      ],
+      "sources": [
+        {
+          "id": "direction",
+          "title": "Reviewed TDF direction",
+          "date": "9–11 October 2026",
+          "note": "Reviewed professional summary; aims and reports are separate from acceptance."
+        },
+        {
+          "id": "infra",
+          "title": "Infrastructure evidence review",
+          "date": "3–9 October 2026",
+          "note": "Dated configuration and access records; current service health was not tested for this map."
+        },
+        {
+          "id": "roles",
+          "title": "TDF published team and role review",
+          "date": "11 October 2026",
+          "url": "https://www.traditionaldreamfactory.com/team",
+          "note": "Published roles do not establish attendance, full mandate or permission."
+        },
+        {
+          "id": "access",
+          "title": "TDF access ownership review",
+          "date": "9 October 2026",
+          "note": "Nuno reported as Bitwarden owner; hosting, permissions and cover remain unverified."
+        },
+        {
+          "id": "knowledge",
+          "title": "Retained knowledge catalogue review",
+          "date": "9 October 2026",
+          "note": "Existing source corpus is findable locally; shared usability and publication rights remain separate."
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "title": "People, roles and access",
+      "kicker": "Follow a useful piece of work",
+      "question": "Who contributes, who is accountable, and who can authorize the next step?",
+      "intro": "Roles may have several people, and people may hold several roles. Contacts, holders, decision authority and current availability need separate evidence.",
+      "color": "#B55378",
+      "columns": [
+        {
+          "id": "starting",
+          "title": "Existing starting points"
+        },
+        {
+          "id": "connect",
+          "title": "Connections to clarify"
+        },
+        {
+          "id": "next",
+          "title": "Useful next steps"
+        }
+      ],
+      "nodes": [
+        {
+          "id": "hosting",
+          "title": "Hosting and bookings",
+          "column": "starting",
+          "summary": "Published and reported work links offer a practical entry into arrival and booking questions.",
+          "status": "reported",
+          "known": [
+            "Sonja is publicly listed as Space Host.",
+            "Bige's hosting, booking and volunteer coordination work is reported."
+          ],
+          "checks": [
+            "Confirm current roster and who follows a booking issue through resolution."
+          ],
+          "sourceIds": [
+            "roles",
+            "direction"
+          ],
+          "domainIds": [
+            "hospitality",
+            "participation"
+          ],
+          "roleIds": [
+            "hosts",
+            "bookings",
+            "volunteers"
+          ],
+          "links": []
+        },
+        {
+          "id": "digital-contacts",
+          "title": "Digital knowledge and contribution",
+          "column": "starting",
+          "summary": "Technical knowledge is useful without implying ownership of every system.",
+          "status": "reported",
+          "known": [
+            "Nuno is an on-site network knowledge contact.",
+            "Mathijs is a remote installer contact; Paul contributes to Closer."
+          ],
+          "checks": [
+            "Confirm current availability and precise contribution scope.",
+            "Do not assign Paul to hosting or equate installation with service ownership."
+          ],
+          "sourceIds": [
+            "roles",
+            "direction"
+          ],
+          "domainIds": [
+            "digital"
+          ],
+          "roleIds": [
+            "network",
+            "closer_contribution"
+          ],
+          "links": []
+        },
+        {
+          "id": "land-continuity",
+          "title": "Land knowledge and continuity",
+          "column": "starting",
+          "summary": "Recent practice, expert advice and practical continuity are different contributions.",
+          "status": "reported",
+          "known": [
+            "Bara's recent practice is a handover source.",
+            "Ofer's expert knowledge and Dylan's practical continuity are recorded."
+          ],
+          "checks": [
+            "Confirm current remit, availability and review/correction route.",
+            "Keep the listed Land Lead distinct from other land contributors."
+          ],
+          "sourceIds": [
+            "land",
+            "roles"
+          ],
+          "domainIds": [
+            "land"
+          ],
+          "roleIds": [
+            "land_lead",
+            "land_steward",
+            "land_consultant"
+          ],
+          "links": [
+            {
+              "mapId": "regenerative-finance",
+              "label": "Land delivery and evidence",
+              "relation": "supports",
+              "nodeId": "land-result"
+            }
+          ]
+        },
+        {
+          "id": "booking-bridge",
+          "title": "Booking-to-service bridge",
+          "column": "connect",
+          "summary": "A front-line problem needs a clear route to someone who can act and return an answer.",
+          "status": "open",
+          "known": [
+            "The booking workflow and Closer contribution are known starting points."
+          ],
+          "checks": [
+            "Who receives, authorizes, fixes and closes one real issue?",
+            "Retrieve service/role information with permitted access."
+          ],
+          "sourceIds": [
+            "closer",
+            "direction",
+            "roles"
+          ],
+          "domainIds": [
+            "hospitality",
+            "digital"
+          ],
+          "roleIds": [
+            "bookings",
+            "closer_owner"
+          ],
+          "links": [
+            {
+              "mapId": "infrastructure",
+              "label": "Service and recovery context",
+              "relation": "depends-on",
+              "nodeId": "services"
+            }
+          ]
+        },
+        {
+          "id": "decisions",
+          "title": "Delegated decisions",
+          "column": "connect",
+          "summary": "Public director roles help locate the conversation; actual limits require a decision record.",
+          "status": "open",
+          "known": [
+            "Tonya is listed as Operations Director.",
+            "Sam and Luna are listed as co-directors."
+          ],
+          "checks": [
+            "Clarify which role can approve which change, spending or contract.",
+            "Separate coordination, budget control and signature authority."
+          ],
+          "sourceIds": [
+            "roles",
+            "direction"
+          ],
+          "domainIds": [
+            "operations",
+            "finance"
+          ],
+          "roleIds": [
+            "operations_director",
+            "directors",
+            "budget",
+            "contracts"
+          ],
+          "links": [
+            {
+              "mapId": "domains",
+              "label": "Operations role and scope",
+              "relation": "related",
+              "roleId": "operations_director"
+            }
+          ]
+        },
+        {
+          "id": "knowledge-care",
+          "title": "Capture, review and upkeep",
+          "column": "connect",
+          "summary": "Keeping knowledge useful involves distinct work beyond initial documentation.",
+          "status": "open",
+          "known": [
+            "Mapping and professional source homes already exist.",
+            "A source record can be captured without being accepted for publication."
+          ],
+          "checks": [
+            "Who corrects a source, approves wider sharing and keeps it current?",
+            "Test a simple handover to a permitted second reader."
+          ],
+          "sourceIds": [
+            "knowledge",
+            "land",
+            "roles"
+          ],
+          "domainIds": [
+            "knowledge",
+            "media"
+          ],
+          "roleIds": [
+            "mapping",
+            "capture_review",
+            "knowledge_upkeep",
+            "editorial"
+          ],
+          "links": []
+        },
+        {
+          "id": "offer-role",
+          "title": "Future offer ownership",
+          "column": "next",
+          "summary": "Choose a concrete offer before appointing its operator or assuming a business relationship.",
+          "status": "proposed",
+          "known": [
+            "AI, learning and income work remains exploratory."
+          ],
+          "checks": [
+            "Name the user, operator, payer, support duties and agreement for one pilot.",
+            "Distinguish knowledge input from operational commitment."
+          ],
+          "sourceIds": [
+            "direction",
+            "roles"
+          ],
+          "domainIds": [
+            "future",
+            "finance"
+          ],
+          "roleIds": [
+            "income_offers",
+            "ai_operator",
+            "contracts"
+          ],
+          "links": [
+            {
+              "mapId": "ai-revenue",
+              "label": "Test one useful offer",
+              "relation": "supports",
+              "nodeId": "pilot"
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "hosting",
+          "to": "booking-bridge",
+          "label": "Front-line issue to resolution route",
+          "kind": "dependency"
+        },
+        {
+          "from": "digital-contacts",
+          "to": "booking-bridge",
+          "label": "Contribution informs the route",
+          "kind": "recorded"
+        },
+        {
+          "from": "decisions",
+          "to": "offer-role",
+          "label": "Mandate and terms before operation",
+          "kind": "dependency"
+        },
+        {
+          "from": "land-continuity",
+          "to": "knowledge-care",
+          "label": "Practical account to reviewed handover",
+          "kind": "dependency"
+        }
+      ],
+      "notes": [
+        "Can use now: published roles and recorded professional knowledge routes.",
+        "Confirm before relying on them: availability, complete mandate, access and delegated authority.",
+        "The domain map keeps all 41 role rows; this page follows selected practical journeys."
+      ],
+      "sources": [
+        {
+          "id": "roles",
+          "title": "TDF published team and role review",
+          "date": "11 October 2026",
+          "url": "https://www.traditionaldreamfactory.com/team",
+          "note": "Published roles do not establish attendance, full mandate or permission."
+        },
+        {
+          "id": "direction",
+          "title": "Reviewed TDF direction",
+          "date": "9–11 October 2026",
+          "note": "Reviewed professional summary; aims and reports are separate from acceptance."
+        },
+        {
+          "id": "land",
+          "title": "Land handover evidence review",
+          "date": "8–9 October 2026",
+          "note": "Practical capture exists; expert corrections and current-use checks remain open."
+        },
+        {
+          "id": "knowledge",
+          "title": "Retained knowledge catalogue review",
+          "date": "9 October 2026",
+          "note": "Existing source corpus is findable locally; shared usability and publication rights remain separate."
+        },
+        {
+          "id": "closer",
+          "title": "Closer platform",
+          "date": "Retained review September–October 2026",
+          "url": "https://closer.earth/",
+          "note": "Platform context does not establish local operator or permission."
+        }
+      ]
+    },
+    {
+      "id": "ai-revenue",
+      "title": "AI and tech revenue",
+      "kicker": "Useful work before a larger offer",
+      "question": "What could someone use or pay for, and what would it take to deliver reliably?",
+      "intro": "Reliable coworking and a useful small result can start with existing resources. Future compute, support and learning offers need user evidence, an operator and workable terms.",
+      "color": "#9759A0",
+      "columns": [
+        {
+          "id": "starting",
+          "title": "Existing starting points"
+        },
+        {
+          "id": "connect",
+          "title": "Connections to clarify"
+        },
+        {
+          "id": "next",
+          "title": "Useful next steps"
+        }
+      ],
+      "nodes": [
+        {
+          "id": "cowork",
+          "title": "Reliable coworking",
+          "column": "starting",
+          "summary": "Practical working conditions are an immediate route to usefulness.",
+          "status": "reported",
+          "known": [
+            "Connectivity and work conditions are recorded priorities.",
+            "A limited coworking account provides questions to test."
+          ],
+          "checks": [
+            "Observe calls, connectivity, noise and comfort with a real user.",
+            "Identify the most costly friction and verify the improvement."
+          ],
+          "sourceIds": [
+            "cowork",
+            "direction"
+          ],
+          "domainIds": [
+            "hospitality",
+            "digital",
+            "future"
+          ],
+          "roleIds": [
+            "hosts",
+            "network",
+            "income_offers"
+          ],
+          "links": [
+            {
+              "mapId": "infrastructure",
+              "label": "Connectivity and service readiness",
+              "relation": "depends-on",
+              "nodeId": "connectivity"
+            }
+          ]
+        },
+        {
+          "id": "practical-result",
+          "title": "First useful result",
+          "column": "starting",
+          "summary": "The first aim is a result a real person at TDF can use.",
+          "status": "reported",
+          "known": [
+            "Practical usefulness is distinct from payment.",
+            "Existing knowledge and systems can support bounded work."
+          ],
+          "checks": [
+            "Select the exact task, beneficiary, reviewer and done condition."
+          ],
+          "sourceIds": [
+            "direction"
+          ],
+          "domainIds": [
+            "knowledge",
+            "digital",
+            "future"
+          ],
+          "roleIds": [
+            "tech_bridge",
+            "mapping",
+            "income_offers"
+          ],
+          "links": []
+        },
+        {
+          "id": "november",
+          "title": "November experiment",
+          "column": "connect",
+          "summary": "A small gathering could bring new people; format and delivery remain open.",
+          "status": "proposed",
+          "known": [
+            "Learning, nature and human flourishing are recorded themes.",
+            "The gathering need not require payment or a hackathon format."
+          ],
+          "checks": [
+            "Choose the audience, format, host and delivery capacity.",
+            "Confirm dates and a useful reason to attend before announcing."
+          ],
+          "sourceIds": [
+            "direction"
+          ],
+          "domainIds": [
+            "participation",
+            "future",
+            "hospitality"
+          ],
+          "roleIds": [
+            "event_coordination",
+            "business_pilots",
+            "hosts"
+          ],
+          "links": []
+        },
+        {
+          "id": "future-compute",
+          "title": "Future compute or hosting",
+          "column": "connect",
+          "summary": "Local AI and hosting are possibilities requiring evidence of capacity and reliability.",
+          "status": "proposed",
+          "known": [
+            "Local compute, storage and paid support have been discussed."
+          ],
+          "checks": [
+            "Compare existing, rented and local capacity for the actual use.",
+            "Verify support, permitted access, recovery and full costs before a service promise."
+          ],
+          "sourceIds": [
+            "direction",
+            "infra"
+          ],
+          "domainIds": [
+            "digital",
+            "future"
+          ],
+          "roleIds": [
+            "servers",
+            "ai_operator"
+          ],
+          "links": [
+            {
+              "mapId": "domains",
+              "label": "Future operating scope",
+              "relation": "related",
+              "roleId": "ai_operator"
+            }
+          ]
+        },
+        {
+          "id": "operator-terms",
+          "title": "Operator and agreement",
+          "column": "connect",
+          "summary": "TDF-operated, independent and partner-operated offers have different obligations.",
+          "status": "open",
+          "known": [
+            "Several possible operator models are recorded."
+          ],
+          "checks": [
+            "Agree who owns hardware, receives payments, pays costs and handles departure.",
+            "Confirm entity, access, support and signing authority."
+          ],
+          "sourceIds": [
+            "direction",
+            "roles"
+          ],
+          "domainIds": [
+            "future",
+            "finance",
+            "operations"
+          ],
+          "roleIds": [
+            "ai_operator",
+            "contracts",
+            "budget"
+          ],
+          "links": [
+            {
+              "mapId": "people",
+              "label": "Roles and decision boundaries",
+              "relation": "depends-on",
+              "nodeId": "decisions"
+            }
+          ]
+        },
+        {
+          "id": "economics",
+          "title": "Demand, income and costs",
+          "column": "next",
+          "summary": "Actual use and payments need evidence; equipment finance is a separate input.",
+          "status": "open",
+          "known": [
+            "Meaningful income is a recorded aim, not a completed result."
+          ],
+          "checks": [
+            "Test a useful offer with a real user and payer.",
+            "Separate revenue, operating costs, capital and recurring support workload."
+          ],
+          "sourceIds": [
+            "direction",
+            "cowork"
+          ],
+          "domainIds": [
+            "future",
+            "finance"
+          ],
+          "roleIds": [
+            "income_offers",
+            "budget"
+          ],
+          "links": []
+        },
+        {
+          "id": "pilot",
+          "title": "One bounded pilot",
+          "column": "next",
+          "summary": "Choose the smallest useful version with a reviewer and upkeep route.",
+          "status": "proposed",
+          "known": [
+            "One practical result can inform later learning and commercial decisions."
+          ],
+          "checks": [
+            "Record uptake, user feedback, delivery effort and any attributable payment.",
+            "Use the result to choose continue, change or stop."
+          ],
+          "sourceIds": [
+            "direction"
+          ],
+          "domainIds": [
+            "future",
+            "knowledge"
+          ],
+          "roleIds": [
+            "income_offers",
+            "business_pilots"
+          ],
+          "links": [
+            {
+              "mapId": "regenerative-finance",
+              "label": "Capital and outside funding are separate",
+              "relation": "related",
+              "nodeId": "fit-check"
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "cowork",
+          "to": "practical-result",
+          "label": "Improve an actual work experience",
+          "kind": "proposed"
+        },
+        {
+          "from": "practical-result",
+          "to": "november",
+          "label": "Experience can inform a gathering",
+          "kind": "proposed"
+        },
+        {
+          "from": "future-compute",
+          "to": "operator-terms",
+          "label": "Capacity needs accountable operation",
+          "kind": "dependency"
+        },
+        {
+          "from": "operator-terms",
+          "to": "economics",
+          "label": "Obligations shape viability",
+          "kind": "dependency"
+        },
+        {
+          "from": "economics",
+          "to": "pilot",
+          "label": "Test actual use and costs",
+          "kind": "proposed"
+        }
+      ],
+      "notes": [
+        "Can test now: cowork improvements, retrieval and a small learning/practical experiment within permission.",
+        "Conditional: new compute capacity, paid support and larger offsites or events.",
+        "November gathering, attributable income, a substantial 2027 event and enduring identity remain separate aims.",
+        "No price, revenue forecast, equipment order or visitor commitment is assumed."
+      ],
+      "sources": [
+        {
+          "id": "direction",
+          "title": "Reviewed TDF direction",
+          "date": "9–11 October 2026",
+          "note": "Reviewed professional summary; aims and reports are separate from acceptance."
+        },
+        {
+          "id": "cowork",
+          "title": "Reviewed coworking experience and direction",
+          "date": "6–11 October 2026",
+          "note": "A limited experience account informs questions; it does not validate demand or prices."
+        },
+        {
+          "id": "infra",
+          "title": "Infrastructure evidence review",
+          "date": "3–9 October 2026",
+          "note": "Dated configuration and access records; current service health was not tested for this map."
+        },
+        {
+          "id": "roles",
+          "title": "TDF published team and role review",
+          "date": "11 October 2026",
+          "url": "https://www.traditionaldreamfactory.com/team",
+          "note": "Published roles do not establish attendance, full mandate or permission."
+        }
+      ]
+    },
+    {
+      "id": "regenerative-finance",
+      "title": "Regenerative finance and outside funding",
+      "kicker": "Connect an outcome to a suitable route",
+      "question": "Which bounded ecological result could receive support, through which entity and with what obligations?",
+      "intro": "Existing public backing mechanisms and researched leads provide routes to investigate. Money received, eligible applicants and current project commitments need their own evidence.",
+      "color": "#398153",
+      "columns": [
+        {
+          "id": "starting",
+          "title": "Existing starting points"
+        },
+        {
+          "id": "connect",
+          "title": "Connections to clarify"
+        },
+        {
+          "id": "next",
+          "title": "Useful next steps"
+        }
+      ],
+      "nodes": [
+        {
+          "id": "published-routes",
+          "title": "Published TDF backing routes",
+          "column": "starting",
+          "summary": "Public material presents several ways to support TDF.",
+          "status": "recorded",
+          "known": [
+            "Token backing, private lending, prepaid stays and monthly support are published mechanisms."
+          ],
+          "checks": [
+            "Verify current terms and actual received, restricted or owed amounts.",
+            "Separate backing mechanisms from free operating cash."
+          ],
+          "sourceIds": [
+            "finance"
+          ],
+          "domainIds": [
+            "finance"
+          ],
+          "roleIds": [
+            "accounting",
+            "budget"
+          ],
+          "links": []
+        },
+        {
+          "id": "oasa-models",
+          "title": "OASA funding models",
+          "column": "starting",
+          "summary": "Village-fund and catalytic-capital material describe different support models.",
+          "status": "recorded",
+          "known": [
+            "Published models include donation and repayable instruments."
+          ],
+          "checks": [
+            "Confirm actual TDF access, allocation and conditions.",
+            "Do not infer a transaction from the model."
+          ],
+          "sourceIds": [
+            "oasa",
+            "funding"
+          ],
+          "domainIds": [
+            "finance"
+          ],
+          "roleIds": [
+            "funding",
+            "contracts"
+          ],
+          "links": []
+        },
+        {
+          "id": "land-result",
+          "title": "One bounded land result",
+          "column": "starting",
+          "summary": "Existing water, soil and stewardship knowledge can inform a useful project.",
+          "status": "reported",
+          "known": [
+            "Land records and practical handover sources are retained."
+          ],
+          "checks": [
+            "Name the place, useful outcome, scope, owner and maintenance path.",
+            "Distinguish current practice, planned work and rejected proposal bundles."
+          ],
+          "sourceIds": [
+            "land",
+            "knowledge"
+          ],
+          "domainIds": [
+            "land",
+            "finance"
+          ],
+          "roleIds": [
+            "land_steward",
+            "water_monitoring",
+            "funding"
+          ],
+          "links": [
+            {
+              "mapId": "people",
+              "label": "Expertise and practical continuity",
+              "relation": "depends-on",
+              "nodeId": "land-continuity"
+            }
+          ]
+        },
+        {
+          "id": "ledger",
+          "title": "Funding and obligations ledger",
+          "column": "connect",
+          "summary": "The current financial picture needs receipts, restrictions, future duties and decision records.",
+          "status": "open",
+          "known": [
+            "Published routes and dated proposal records provide starting evidence."
+          ],
+          "checks": [
+            "Recover existing applications, decisions, receipts and liabilities.",
+            "Keep loans, prepaid services, donations and earned income distinct."
+          ],
+          "sourceIds": [
+            "finance",
+            "knowledge",
+            "funding"
+          ],
+          "domainIds": [
+            "finance",
+            "operations"
+          ],
+          "roleIds": [
+            "accounting",
+            "budget",
+            "funding"
+          ],
+          "links": []
+        },
+        {
+          "id": "evidence",
+          "title": "Baseline, outcome and source rights",
+          "column": "connect",
+          "summary": "Reliable evidence supports a land result but does not create impact by itself.",
+          "status": "open",
+          "known": [
+            "Ecological records and a dated monitoring inventory are retained."
+          ],
+          "checks": [
+            "Establish method, current readings, baseline, uncertainty and correction route.",
+            "Confirm permission and attribution before sharing source material."
+          ],
+          "sourceIds": [
+            "land",
+            "infra",
+            "knowledge"
+          ],
+          "domainIds": [
+            "land",
+            "knowledge",
+            "digital"
+          ],
+          "roleIds": [
+            "water_monitoring",
+            "capture_review",
+            "monitoring"
+          ],
+          "links": [
+            {
+              "mapId": "infrastructure",
+              "label": "Verify actual monitoring output",
+              "relation": "depends-on",
+              "nodeId": "monitoring"
+            }
+          ]
+        },
+        {
+          "id": "applicant",
+          "title": "Applicant and delivery capacity",
+          "column": "connect",
+          "summary": "The recipient, signatory and delivery team must fit the actual project.",
+          "status": "open",
+          "known": [
+            "TDF, OASA and the operating entity have distinct roles in retained material."
+          ],
+          "checks": [
+            "Identify legal recipient, mandate, signatory, costs and co-funding.",
+            "Check who can deliver and maintain the result after support ends."
+          ],
+          "sourceIds": [
+            "funding",
+            "roles"
+          ],
+          "domainIds": [
+            "finance",
+            "operations",
+            "land"
+          ],
+          "roleIds": [
+            "funding",
+            "contracts",
+            "budget"
+          ],
+          "links": [
+            {
+              "mapId": "domains",
+              "label": "Funding role and scope",
+              "relation": "related",
+              "roleId": "funding"
+            }
+          ]
+        },
+        {
+          "id": "fit-check",
+          "title": "Reasoned funding fit",
+          "column": "next",
+          "summary": "Match one useful project to a plausible route after recovering existing work.",
+          "status": "proposed",
+          "known": [
+            "Community support, grants, learning programmes and investment are different instruments.",
+            "Dated outside-funding leads already have a research owner."
+          ],
+          "checks": [
+            "Recheck the current official call and full conditions before application work.",
+            "Record pursue, later or not fit with reasons and a responsible next step."
+          ],
+          "sourceIds": [
+            "funding",
+            "direction"
+          ],
+          "domainIds": [
+            "finance",
+            "future"
+          ],
+          "roleIds": [
+            "funding",
+            "income_offers"
+          ],
+          "links": [
+            {
+              "mapId": "ai-revenue",
+              "label": "Earned customer income has its own test",
+              "relation": "related",
+              "nodeId": "economics"
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "published-routes",
+          "to": "ledger",
+          "label": "Published channels need financial evidence",
+          "kind": "dependency"
+        },
+        {
+          "from": "oasa-models",
+          "to": "ledger",
+          "label": "Allocation and conditions need evidence",
+          "kind": "dependency"
+        },
+        {
+          "from": "land-result",
+          "to": "evidence",
+          "label": "A useful result needs credible evidence",
+          "kind": "dependency"
+        },
+        {
+          "from": "applicant",
+          "to": "fit-check",
+          "label": "Recipient and delivery determine fit",
+          "kind": "dependency"
+        },
+        {
+          "from": "evidence",
+          "to": "fit-check",
+          "label": "Reviewed project evidence informs matching",
+          "kind": "proposed"
+        }
+      ],
+      "notes": [
+        "Can use now: retained land sources and dated published-mechanism research.",
+        "Conditional: current call fit, eligible applicant, allocation, delivery and upkeep.",
+        "No funding is described as secured and no deadline is reproduced without a fresh check.",
+        "Monitoring, modelled scenarios and marketing plans are not verified ecological outcomes or credits."
+      ],
+      "sources": [
+        {
+          "id": "finance",
+          "title": "Published TDF backing routes",
+          "date": "Checked 9 October 2026",
+          "url": "https://www.traditionaldreamfactory.com/fundraiser",
+          "note": "Public mechanisms; no verified receipts, liabilities or current terms."
+        },
+        {
+          "id": "oasa",
+          "title": "Published OASA funding models",
+          "date": "Checked 9 October 2026",
+          "url": "https://oasa.earth/fund/",
+          "note": "Advertised mechanisms; no TDF allocation established."
+        },
+        {
+          "id": "land",
+          "title": "Land handover evidence review",
+          "date": "8–9 October 2026",
+          "note": "Practical capture exists; expert corrections and current-use checks remain open."
+        },
+        {
+          "id": "knowledge",
+          "title": "Retained knowledge catalogue review",
+          "date": "9 October 2026",
+          "note": "Existing source corpus is findable locally; shared usability and publication rights remain separate."
+        },
+        {
+          "id": "infra",
+          "title": "Infrastructure evidence review",
+          "date": "3–9 October 2026",
+          "note": "Dated configuration and access records; current service health was not tested for this map."
+        },
+        {
+          "id": "funding",
+          "title": "Funding-route screening",
+          "date": "9 October 2026",
+          "note": "Dated research leads. Current calls, fit and applications require owner verification."
+        },
+        {
+          "id": "roles",
+          "title": "TDF published team and role review",
+          "date": "11 October 2026",
+          "url": "https://www.traditionaldreamfactory.com/team",
+          "note": "Published roles do not establish attendance, full mandate or permission."
+        },
+        {
+          "id": "direction",
+          "title": "Reviewed TDF direction",
+          "date": "9–11 October 2026",
+          "note": "Reviewed professional summary; aims and reports are separate from acceptance."
+        }
+      ]
+    }
+  ]
+}
