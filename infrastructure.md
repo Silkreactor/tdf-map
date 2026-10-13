@@ -1,4 +1,4 @@
-# Digital infrastructure — v5.1
+# Digital infrastructure — v5.2
 
 Public professional review edition · Updated 2026-10-12
 

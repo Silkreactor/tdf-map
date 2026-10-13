@@ -1,4 +1,4 @@
-# Regenerative finance and outside funding — v5.1
+# Regenerative finance and outside funding — v5.2
 
 Public professional review edition · Updated 2026-10-12
 

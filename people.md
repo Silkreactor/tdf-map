@@ -1,4 +1,4 @@
-# People, roles and access — v5.1
+# People, roles and access — v5.2
 
 Public professional review edition · Updated 2026-10-12
 
